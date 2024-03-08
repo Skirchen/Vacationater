@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="skirchen.example.Vacationater.ui.ExcursionDetail">
+
+    <EditText
+        android:id="@+id/excursion_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <TextView
+        android:id="@+id/excursion_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date mm/dd/yy"
+        app:layout_constraintTop_toBottomOf="@+id/excursion_title"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/save_excursion_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/excursion_date"/>
+    <Button
+        android:id="@+id/delete_excursion_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE"
+        app:layout_constraintTop_toBottomOf="@+id/notify_button"
+        app:layout_constraintStart_toStartOf="parent"/>
+    <Button
+        android:id="@+id/notify_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOTIFY"
+        app:layout_constraintTop_toBottomOf="@+id/save_excursion_button"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

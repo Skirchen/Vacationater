@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp">
+
+        <TextView
+            android:id="@+id/report_vacation_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="title"/>
+        <TextView
+            android:id="@+id/report_vacation_lodging"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="lodging"/>
+        <TextView
+            android:id="@+id/report_vacation_start_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="start date"/>
+        <TextView
+            android:id="@+id/report_vacation_end_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="end date"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/report_excursionTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excursions"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/report_excursionRV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
